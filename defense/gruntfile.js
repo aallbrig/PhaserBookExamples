@@ -19,13 +19,13 @@ module.exports = function(grunt) {
       files: [ 'src/**/*.js' ],
       tasks: ['browserify'],
       options: {
-          spawn: false,
-        },
+        spawn: false,
+      },
     },
     connect: {
       target:{
             options: {
-                port: 9001
+                port: process.env.PORT || 9001
             }
         }
     },
