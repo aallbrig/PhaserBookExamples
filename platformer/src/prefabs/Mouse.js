@@ -1,6 +1,6 @@
 export default class Mouse extends Phaser.Sprite {
 
-		constructor(game, x, y, player) { 
+	constructor(game, x, y, player) { 
 		super(game, x, y, 'mouse', 0);
 
 		//game object level variables

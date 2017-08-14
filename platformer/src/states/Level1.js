@@ -71,7 +71,7 @@ export default class Level1 extends Phaser.State {
   	this.physics.arcade.collide(this.player, this.layer);
   	this.physics.arcade.collide(this.enemies, this.layer);
   	this.physics.arcade.overlap(this.player, this.coins, this.collectCoin, null, this);
-        this.physics.arcade.overlap(this.player, this.doors, this.hitDoor, null, this);
+    this.physics.arcade.overlap(this.player, this.doors, this.hitDoor, null, this);
   	this.physics.arcade.collide(this.player, this.enemies, this.hitEnemy, null, this);
   }
 
@@ -79,7 +79,7 @@ export default class Level1 extends Phaser.State {
   	coinRef.kill();
   	this.game.score ++;
   	this.scoreField.setValue(this.game.score);
-        this.sfx.play("coin");
+    this.sfx.play("coin");
   }
 
   hitDoor(playerRef, doorRef) {
