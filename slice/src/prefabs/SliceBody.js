@@ -12,7 +12,6 @@ export default class SliceBody extends Phaser.Physics.P2.Body {
     this.static = true;
     this.onBeginContact.add(this.sliceHit, this);
 
-   // this.debug = true;
     this.life = 10;
     this.success = new Phaser.Signal();
   }
